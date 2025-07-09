@@ -3,71 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ghost Browser Hero</title>
+  <title>Unlaunched Robotics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- header / nav -->
+  <!-- HEADER / NAV -->
   <header class="site-header">
     <div class="container">
-      <a href="#" class="logo">
-        <img src="images/ghost-logo.svg" alt="Ghost Logo" />
-      </a>
-
+      <a href="#home" class="logo">RoboZen BD</a>
       <nav class="main-nav">
         <ul>
-          <li><a href="#" class="active">Case Study</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#preorder">Pre‑Order</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-
-      <button class="menu-toggle">
-        <img src="images/icon-menu.svg" alt="Menu" />
-      </button>
+      <button class="menu-toggle">☰</button>
     </div>
   </header>
 
-
-  <!-- hero -->
-  <section class="hero">
-    <div class="container hero-content">
-      <!-- left column -->
-      <div class="hero-text">
-        <p class="label">NEW GHOST BROWSER</p>
-        <h1>Isolate Your<br/>Identities.</h1>
-        <p class="intro">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="btn btn-primary">Download Now</a>
-      </div>
-
-      <!-- right column -->
-      <div class="hero-image">
-        <img src="images/illustration.png" alt="Browser Illustration" />
-      </div>
-    </div>
-
-    <!-- footer controls -->
-    <div class="hero-footer">
-      <div class="scroll-indicator">
-        <img src="images/icon-scroll.svg" alt="Scroll" />
-      </div>
-      <div class="features-link">All Features</div>
-      <div class="arrows">
-        <button class="arrow-btn">
-          <img src="images/icon-arrow-left.svg" alt="Prev" />
-        </button>
-        <button class="arrow-btn">
-          <img src="images/icon-arrow-right.svg" alt="Next" />
-        </button>
-      </div>
-      <div class="pagination">01 <span class="dot">.</span> 04</div>
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Launching Soon</h1>
+      <p>Prepare for the next generation robotics platform. Pre‑order starts now!</p>
+      <a href="#preorder" class="btn">Pre‑Order Now</a>
     </div>
   </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>আমরা RoboZen BD, cutting‑edge robotics development এ নেতৃত্ব দিচ্ছি। আমাদের মিশন: সাশ্রয়ী মূল্যে স্বয়ংক্রিয় সমাধান সরবরাহ করা।</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Products</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/robot1.png" alt="Robot Model A">
+          <h3>Model A</h3>
+          <p>Wireless control, modular design.</p>
+        </div>
+        <div class="card">
+          <img src="images/robot2.png" alt="Robot Model B">
+          <h3>Model B</h3>
+          <p>AI vision, obstacle avoidance.</p>
+        </div>
+        <div class="card">
+          <img src="images/robot3.png" alt="Robot Model C">
+          <h3>Model C</h3>
+          <p>Educational kit, easy programming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="roadmap">
+    <div class="container">
+      <h2>Roadmap</h2>
+      <ul>
+        <li><strong>Q1 2025:</strong> Prototype Complete</li>
+        <li><strong>Q2 2025:</strong> Beta Testing</li>
+        <li><strong>Q3 2025:</strong> Manufacturing Setup</li>
+        <li><strong>Q4 2025:</strong> Official Launch</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRE‑ORDER -->
+  <section id="preorder" class="preorder">
+    <div class="container">
+      <h2>Pre‑Order / Inquiry</h2>
+      <form action="#" class="preorder-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="" disabled selected>Choose Model</option>
+          <option>Model A</option>
+          <option>Model B</option>
+          <option>Model C</option>
+        </select>
+        <button type="submit" class="btn">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="faqs">
+    <div class="container">
+      <h2>FAQs</h2>
+      <details>
+        <summary>কিভাবে পেমেন্ট করবো?</summary>
+        <p>bKash অথবা ব্যাংক ট্রান্সফার গ্রহণযোগ্য।</p>
+      </details>
+      <details>
+        <summary>ডেলিভারি কবে পাব?</summary>
+        <p>Launch হওয়ার ২ সপ্তাহের মধ্যে ঢাকায় ডেলিভারি।</p>
+      </details>
+      <details>
+        <summary>ওয়্যারেন্টি আছে?</summary>
+        <p>১ বছরের ফ্রি সার্ভিস ওয়ারেন্টি।</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Facebook: <a href="https://facebook.com/YourPage" target="_blank">RoboZen BD</a></p>
+      <p>WhatsApp: <a href="https://wa.me/8801XXXXXXXXX" target="_blank">+8801XXXXXXXXX</a></p>
+      <p>Email: <a href="mailto:info@robozenbd.com">info@robozenbd.com</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 RoboZen BD. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
