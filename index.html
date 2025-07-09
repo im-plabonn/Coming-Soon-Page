@@ -3,49 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tech With Heart</title>
+  <title>Ghost Browser Hero</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">FLUTTERTOP.</div>
-      <ul>
-        <li>Robot</li>
-        <li>Store</li>
-        <li>Support</li>
-        <li>Community</li>
-      </ul>
-      <div class="auth">
-        <input type="text" placeholder="🔍" />
-        <button>Log in</button>
-      </div>
-    </nav>
+
+  <!-- header / nav -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/ghost-logo.svg" alt="Ghost Logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active">Case Study</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Demo</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle">
+        <img src="images/icon-menu.svg" alt="Menu" />
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <h4>INTRODUCING</h4>
-      <h1>Tech With Heart</h1>
-      <p>Welcome to Tech with Heart, where our AI robots blend advanced technology with empathy.</p>
-      <div class="cta">
-        <button class="buy">Buy now</button>
-        <button class="how">How it works?</button>
-      </div>
-    </section>
 
-    <section class="robot-section">
-      <img src="images/robot.png" alt="Robot Image" class="robot-img" />
-      <div class="languages">
-        <p>こんにちは</p>
-        <p>Robot can now understand voice commands in 10 languages</p>
-        <p>ロボットはより多くの言語を理解</p>
+  <!-- hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <!-- left column -->
+      <div class="hero-text">
+        <p class="label">NEW GHOST BROWSER</p>
+        <h1>Isolate Your<br/>Identities.</h1>
+        <p class="intro">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#" class="btn btn-primary">Download Now</a>
       </div>
-    </section>
 
-    <section class="footer-note">
-      <p>Loved by more than <strong>10K+ users</strong></p>
-    </section>
-  </main>
+      <!-- right column -->
+      <div class="hero-image">
+        <img src="images/illustration.png" alt="Browser Illustration" />
+      </div>
+    </div>
+
+    <!-- footer controls -->
+    <div class="hero-footer">
+      <div class="scroll-indicator">
+        <img src="images/icon-scroll.svg" alt="Scroll" />
+      </div>
+      <div class="features-link">All Features</div>
+      <div class="arrows">
+        <button class="arrow-btn">
+          <img src="images/icon-arrow-left.svg" alt="Prev" />
+        </button>
+        <button class="arrow-btn">
+          <img src="images/icon-arrow-right.svg" alt="Next" />
+        </button>
+      </div>
+      <div class="pagination">01 <span class="dot">.</span> 04</div>
+    </div>
+  </section>
+
 </body>
 </html>
