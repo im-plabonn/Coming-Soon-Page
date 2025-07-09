@@ -9,32 +9,49 @@ body { font-family: 'Segoe UI', sans-serif; color: #333; line-height: 1.6; }
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .site-header .container {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* center the nav UL */
   padding: 1rem 0;
 }
-.logo { font-size: 1.5rem; font-weight: bold; color: #7C5CFA; }
-.main-nav ul { display: flex; gap: 1.5rem; list-style: none; }
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
 .main-nav a {
-  color: #555; text-decoration: none; font-weight: 500;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
   padding: 0.25rem 0;
 }
-.main-nav a:hover { color: #7C5CFA; }
+.main-nav a:hover {
+  color: #7C5CFA;
+}
 .menu-toggle {
-  display: none; font-size: 1.5rem; background: none; border: none;
+  margin-left: auto;         /* push toggle to right */
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
 }
 
 /* HERO */
 .hero {
   background: #F4F1FF;
-  text-align: center; padding: 4rem 0;
+  text-align: center;
+  padding: 4rem 0;
 }
 .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
 .hero p { margin-bottom: 2rem; color: #555; }
 .btn {
   display: inline-block;
-  background: #7C5CFA; color: #fff;
-  padding: 0.75rem 2rem; border-radius: 6px;
-  font-weight: 500; transition: background 0.2s;
+  background: #7C5CFA;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
 }
 .btn:hover { background: #6955d9; }
 
@@ -51,40 +68,61 @@ body { font-family: 'Segoe UI', sans-serif; color: #333; line-height: 1.6; }
   gap: 1.5rem;
 }
 .products .card {
-  background: #fff; border-radius: 8px; padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
 }
-.products .card img { max-width: 100%; height: auto; margin-bottom: 1rem; }
+.products .card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
 
 /* ROADMAP */
 .roadmap { background: #fff; padding: 3rem 0; }
 .roadmap h2 { text-align: center; font-size: 2rem; margin-bottom: 1.5rem; }
-.roadmap ul { max-width: 600px; margin: auto; list-style: none; }
+.roadmap ul {
+  max-width: 600px;
+  margin: auto;
+  list-style: none;
+}
 .roadmap li {
-  padding: 0.75rem 0; border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
   font-weight: 500;
 }
 
 /* PRE‑ORDER */
 .preorder { padding: 3rem 0; text-align: center; }
 .preorder-form {
-  display: inline-flex; flex-wrap: wrap; gap: 1rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .preorder-form input,
 .preorder-form select {
-  padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   min-width: 200px;
 }
 .preorder-form button {
-  border: none; cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 /* FAQs */
 .faqs { padding: 3rem 0; background: #F4F1FF; }
 .faqs h2 { text-align: center; font-size: 2rem; margin-bottom: 1.5rem; }
 .faqs details {
-  max-width: 600px; margin: 0.5rem auto; padding: 0.75rem;
-  background: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 .faqs summary { cursor: pointer; font-weight: 500; }
 
@@ -95,8 +133,11 @@ body { font-family: 'Segoe UI', sans-serif; color: #333; line-height: 1.6; }
 
 /* FOOTER */
 .site-footer {
-  background: #222; color: #aaa; text-align: center;
-  padding: 1.5rem 0; margin-top: 2rem;
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
 }
 
 /* RESPONSIVE NAV (Mobile) */
